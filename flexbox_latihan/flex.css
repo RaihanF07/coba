@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: georgia;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: 80%;
+    margin: 0px auto;
+}
+.last{
+    color: crimson;
+}
+.header{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    background: transparent;
+    height: 10vh;
+    margin-bottom: 5em;
+}
+.logo{
+    color: aliceblue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 2;
+    font-size: 1.3em;
+}
+.navigasi{
+    gap: 1em;
+    flex-grow: 3;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    align-items: center;
+}
+.navigasi>li>a{
+    text-decoration: none;
+    border-radius: 0.6em;
+    padding: 0.5em;
+    color: aliceblue;
+    border: 2px solid crimson;
+}
+.navigasi>li>a:hover{
+    color: aliceblue;
+    border: 3px solid crimson;
+    box-shadow: 3px 4px 8px crimson;
+}
+
+.content{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.welcome{
+    padding: 2px;
+    flex-grow: 1;
+    margin-right: 5px;
+}
+.welcome:hover{
+    cursor: pointer;
+    border-bottom: 2px solid crimson;
+    border-right: 2px solid crimson;
+    box-shadow: 2px 3px 8px crimson;
+}
+.muka{
+    flex-grow: 1;
+    margin-right: 1.2em;
+}
+.raihan{
+    border: 2px solid crimson;
+    height: 50vh;
+    border-radius: 50%;
+    background-position-x: left;
+}
+.raihan:hover{
+    border: 3px solid crimson;
+    box-shadow: 4px 5px 8px crimson;
+}
+.welcome>h3,p{
+    color: whitesmoke;
+}
+.welcome>h2{
+    color: crimson;
+}
+
+.footer{
+    width: 80%;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 1.5em;
+}
+
+.footer>p{
+    color: aliceblue;
+}
+
+@media screen and (max-width:565px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2em;
+        margin-bottom: 2em;
+    }
+    .logo{
+        margin-top: 2.5em;
+    }
+    .muka>img{
+        width: 15em;
+        height: 15em;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome{
+        margin-top: 1em;
+    }
+    .deskripsi{
+        text-align: justify;
+    }
+    .welcome>h3,h2{
+        margin-bottom: 0.4em;
+    }
+    .muka{
+        align-self: center;
+    }
+    .raihan:hover{
+        border: 2.3px solid crimson;
+        box-shadow: 4px 5px 10px crimson;
+        border-radius: 50%;
+    }
+    .bg{
+        height: 100vh;
+    }
+    .raihan{
+        border: 1px solid crimson;
+    }
+    .navigasi>li>a:hover{
+        color: aliceblue;
+        border: 3px solid crimson;
+        box-shadow: 3px 3px 6px aliceblue;
+    }
+    .navigasi{
+        gap: 0.8em;
+        margin-bottom: 2em;
+    }
+}
